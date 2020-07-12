@@ -1,4 +1,4 @@
-let User = function (data) {
+let User = (data) => {
     this.data = data
     this.errors = []
 
