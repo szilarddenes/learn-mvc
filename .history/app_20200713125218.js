@@ -16,4 +16,4 @@ console.log('[#] nodemon watch is running.congrats.')
 
 app.use('/', router)
 
-module.exports = app
+module.export
