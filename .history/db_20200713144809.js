@@ -5,6 +5,5 @@ mongodb.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifie
     module.exports = client.db()
     console.log('[*] database is running.congrats.')
     const app = require('./app')
-    app.listen(process.env.PORT)
+    app.listen(3000)
 })
-

@@ -31,15 +31,15 @@ User.prototype.validate = function () {
 
 }
 
-User.prototype.login = function (callback) {
+User.prototype.login = function(){
     this.cleanUp()
-    usersCollection.findOne({ username: this.data.username }, (err, attemptedUser) => {
-        if (attemptedUser && attemptedUser.password == this.data.password) {
-           callback('congrats')
-        } else {
-            callback('invalid')
+    usersCollection.findOne({username:this.data.username},(err,attemtedUser) => {
+if(attemtedUser && attempedUser.password == this.data.password){
+console.log('congrats')
+}else{
+    console.log('invalid')
 
-        }
+}
     })
 }
 

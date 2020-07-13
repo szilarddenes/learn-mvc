@@ -2,8 +2,8 @@ const User = require('../models/User')
 
 exports.login = (req, res) => {
     let user = new User(req.body)
-    user.login(function (result) {
-        res.send(result)
+    user.login(function(result){
+res.send()
     })
 }
 exports.logout = () => {

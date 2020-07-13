@@ -37,7 +37,7 @@ User.prototype.login = function (callback) {
         if (attemptedUser && attemptedUser.password == this.data.password) {
            callback('congrats')
         } else {
-            callback('invalid')
+            console.log('invalid')
 
         }
     })
