@@ -11,8 +11,4 @@ router.post('/login', userController.login)
 router.post('/logout', userController.logout)
 
 //post related routs
-router.get(
-  '/create-post',
-  userController.mustBeLoggedIn,
-  postController.viewCreateScreen
-)
+router.get('create-post', postController.viewCreateScreen)

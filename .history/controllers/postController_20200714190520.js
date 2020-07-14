@@ -1,0 +1,1 @@
+exports.viewCreateScreen=function
